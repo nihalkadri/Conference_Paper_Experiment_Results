@@ -31,10 +31,44 @@ The repository is organized into three main folders, each dedicated to a differe
 - The code produced by the tools-ChatGPT, LLaMA, Gemini, and Copilot-is assessed via this Python script.
 
 #### Configuration Sections
-
 Before running the script, please update the following sections with your respective paths:
 
 ```python
 openai.api_key = 'Your_API_Key'  # Set your OpenAI API key
 folder_path = r"Your_PY_Files_Path"  # Specify the path to your Python files
 output_file = os.path.join(folder_path, r'Your_Output_Excel_Path')  # Set the output path for the Excel file
+```
+### 5. MultiLLM_CodeEval_Hub.py
+The MultiLLM_CodeEval_Hub.py file is a Streamlit-based application that automates the process of generating and evaluating deep learning code produced by multiple large language models (LLMs) such as OpenAI's ChatGPT, Google Gemini and LLaMA. The application allows users to input a task type and dataset name, and it then generates code tailored to the specific task using different LLMs.
+
+The application performs the following steps:
+#### Code Generation: 
+Based on the selected task and dataset, the script generates deep learning code using various LLMs.
+#### Evaluation
+The generated code is evaluated through the OpenAI API for:
+- Deep learning code evaluation
+- Code readability and maintainability evaluation.
+  
+The scores for each LLM are compared, and the LLM that scores the highest is selected.
+
+#### Final Output
+The script outputs the best-performing LLM's code and evaluation scores.
+
+#### Configuration Sections
+Before running the script, update the following sections with your respective paths:
+
+```python
+openai.api_key = os.getenv('OPENAI_API_KEY')  # Ensure OPENAI_API_KEY is set in environment variables
+genai.configure(api_key=os.getenv('GENAI_API_KEY'))  # Ensure GENAI_API_KEY is set in environment variables
+LLAMA_API_KEY = os.getenv('LLAMA_API_KEY')  # Ensure LLAMA_API_KEY is set in environment variables
+```
+#### Requirements
+This project is built using **Python 3.10.0**. The key dependencies for this project include:
+- `openai`: For interacting with OpenAI's API.
+- `google-generativeai`: For accessing Google’s Generative AI API.
+- `streamlit`: For building the web interface.
+- `llamaapi`: For interacting with the LLaMA API.
+Make sure the mentioned dependencies are installed and compatible with Python 3.10.0 for optimal performance.
+
+
+
