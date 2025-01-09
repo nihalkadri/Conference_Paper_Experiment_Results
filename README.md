@@ -1,7 +1,7 @@
-# Towards Autonomous Deep Learning: Comparative Analysis of AI-Generated and AI-Evaluated Code Using LLMs for Image Classification
+# Towards Autonomous Deep Learning: Comparative Analysis of AI-Generated and AI-Evaluated Code Using LLMs for Computer Vision Tasks
 ## Repository Overview
 
-This repository contains the code for the research paper titled **"Towards Autonomous Deep Learning: Comparative Analysis of AI-Generated and AI-Evaluated Code Using LLMs for Image Classification."** The main objective of this research is to explore the capabilities of Large Language Models (LLMs) in generating code for deep learning models, specifically for image classification tasks. The models evaluated include **Convolutional Neural Networks (CNNs)** and **Vision Transformers (ViTs)**, generated using various LLMs such as **ChatGPT, Copilot, Gemini,** and **LLaMA**.
+This repository contains the code for the research paper titled **"Towards Autonomous Deep Learning: Comparative Analysis of AI-Generated and AI-Evaluated Code Using LLMs for Computer Vision Tasks."** The main objective of this research is to explore the capabilities of Large Language Models (LLMs) in generating code for deep learning models, specifically for image classification tasks. The models evaluated include **Convolutional Neural Networks (CNNs)** and **Vision Transformers (ViTs)**, generated using various LLMs such as **ChatGPT, Copilot, Gemini,** and **LLaMA**.
 
 ## Directory Structure
 
